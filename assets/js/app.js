@@ -20,6 +20,8 @@ $(document).ready(function () {
                         <div class="card-body">
                             <p class="text-justify"><strong>Description:</strong> ${entry.Description}</p>
                             <p class="text-justify"><strong>Answer:</strong> ${entry.Answer}</p>
+                            <!-- Add the View Details button -->
+                            <a href="question.php?id=${entry.QuestionID}" class="btn btn-primary mt-3">View Details</a>
                         </div>
                     </div>
                 </div>
