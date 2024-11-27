@@ -26,12 +26,13 @@ if ($result->num_rows > 0) {
     <title><?php echo htmlspecialchars($data['Question']); ?></title>
 </head>
 <body>
-    <div class="container mt-5">
+<?php include 'includes/header.php'; ?>
+    <div class="container mt-5" >
         <div class="card">
             <div class="card-header">
                 <h1 style="Text-align: Center;"><?php echo htmlspecialchars($data['Question']); ?></h1>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="min-height 50vh">
                 <p><strong>Description:</strong></p> <p><?php echo nl2br(htmlspecialchars($data['Description'])); ?></p>
                 <p><strong>Answer:</strong></p> <p><?php echo nl2br(htmlspecialchars($data['Answer'])); ?></p>
             </div>
@@ -40,5 +41,6 @@ if ($result->num_rows > 0) {
             </div>
         </div>
     </div>
+    <?php include 'includes/footer.php'; ?>
 </body>
-</html>
+
