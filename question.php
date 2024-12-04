@@ -32,7 +32,7 @@ if ($result->num_rows > 0) {
             <div class="card-header">
                 <h1 style="Text-align: Center;"><?php echo htmlspecialchars($data['Question']); ?></h1>
             </div>
-            <<div class="card-body" style="min-height: 50vh;"> <!-- Corrected CSS syntax -->
+            <div class="card-body" style="min-height: 50vh;"> <!-- Corrected CSS syntax -->
                 <p><strong>Description:</strong></p> 
                 <p><?php echo nl2br(htmlspecialchars($data['Description'])); ?></p>
                 <p><strong>Answer:</strong></p> 
